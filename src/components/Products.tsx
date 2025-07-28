@@ -55,12 +55,75 @@ const Products = () => {
                     ))}
                   </div>
                   
-                  <Button variant="business" className="w-full">
-                    Request Samples
-                  </Button>
+                  <div className="grid grid-cols-2 gap-3">
+                    <Button variant="business" className="w-full">
+                      Request Samples
+                    </Button>
+                    <Button variant="outline" className="w-full border-business-navy text-business-navy hover:bg-business-navy hover:text-business-light">
+                      View Catalogue
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* Product Catalogues Section */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-business-navy mb-4">
+                Product Catalogues
+              </h3>
+              <p className="text-lg text-business-muted max-w-2xl mx-auto">
+                Browse our comprehensive catalogues featuring the latest fabric collections and specifications
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300 cursor-pointer">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-16 h-16 bg-business-gold/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <div className="w-8 h-8 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="font-semibold text-business-navy mb-2">Shirting Collection</h4>
+                  <p className="text-sm text-business-muted mb-4">Latest shirting fabrics catalog</p>
+                  <Button variant="outline" size="sm" className="w-full">Download PDF</Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300 cursor-pointer">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-16 h-16 bg-business-gold/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <div className="w-8 h-8 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="font-semibold text-business-navy mb-2">Suiting Materials</h4>
+                  <p className="text-sm text-business-muted mb-4">Premium suiting collection</p>
+                  <Button variant="outline" size="sm" className="w-full">Download PDF</Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300 cursor-pointer">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-16 h-16 bg-business-gold/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <div className="w-8 h-8 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="font-semibold text-business-navy mb-2">Uniform Fabrics</h4>
+                  <p className="text-sm text-business-muted mb-4">Institutional uniform materials</p>
+                  <Button variant="outline" size="sm" className="w-full">Download PDF</Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300 cursor-pointer">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-16 h-16 bg-business-gold/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <div className="w-8 h-8 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="font-semibold text-business-navy mb-2">Complete Range</h4>
+                  <p className="text-sm text-business-muted mb-4">Full product range catalog</p>
+                  <Button variant="outline" size="sm" className="w-full">Download PDF</Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
           
           {/* Additional Services */}

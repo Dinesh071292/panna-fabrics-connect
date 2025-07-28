@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import manufacturingImage from "@/assets/manufacturing.jpg";
 
 const Services = () => {
@@ -78,7 +79,7 @@ const Services = () => {
           </div>
           
           {/* Competitive Advantages Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {advantages.map((advantage, index) => (
               <Card key={index} className="shadow-card border-0 hover:shadow-business transition-all duration-300">
                 <CardHeader>
@@ -94,6 +95,59 @@ const Services = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* Service Catalogues Section */}
+          <div className="bg-background rounded-lg p-8">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-business-navy mb-4">
+                Service Catalogues & Resources
+              </h3>
+              <p className="text-lg text-business-muted max-w-2xl mx-auto">
+                Access detailed information about our manufacturing capabilities and service offerings
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-business-gold/10 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-6 h-6 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="text-xl font-semibold text-business-navy mb-3">Manufacturing Catalogue</h4>
+                  <p className="text-business-muted mb-4">Complete overview of our in-house manufacturing capabilities and processes</p>
+                  <Button variant="business" className="w-full">
+                    Download Catalogue
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-business-gold/10 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-6 h-6 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="text-xl font-semibold text-business-navy mb-3">Custom Solutions Guide</h4>
+                  <p className="text-business-muted mb-4">Detailed guide on our customization services and bespoke solutions</p>
+                  <Button variant="business" className="w-full">
+                    Download Guide
+                  </Button>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-card border-0 hover:shadow-business transition-all duration-300">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-business-gold/10 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-6 h-6 bg-business-gold rounded"></div>
+                  </div>
+                  <h4 className="text-xl font-semibold text-business-navy mb-3">Quality Standards</h4>
+                  <p className="text-business-muted mb-4">Our quality control processes and industry certifications</p>
+                  <Button variant="business" className="w-full">
+                    View Standards
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
