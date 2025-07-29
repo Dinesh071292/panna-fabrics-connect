@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-business-gold">Panna Distributors</span>
             <span className="block text-3xl md:text-4xl font-medium mt-4">
-              40+ Years of Textile Excellence
+              45+ Years of Textile Excellence
             </span>
           </h1>
           
@@ -49,11 +49,11 @@ const Hero = () => {
           {/* Key Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-business-gold mb-2">40+</div>
+              <div className="text-4xl font-bold text-business-gold mb-2">45+</div>
               <div className="text-business-light/80">Years of Excellence</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-business-gold mb-2">1984</div>
+              <div className="text-4xl font-bold text-business-gold mb-2">1979</div>
               <div className="text-business-light/80">Established</div>
             </div>
             <div className="text-center">
