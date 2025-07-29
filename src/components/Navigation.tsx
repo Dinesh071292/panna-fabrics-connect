@@ -68,7 +68,7 @@ const Navigation = () => {
             <Button
               variant={isScrolled ? "business" : "accent"}
               size="sm"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => window.open('https://wa.me/9448762116?text=Hi,%20need%20a%20quote', '_blank')}
               className="ml-2"
             >
               Get Quote
