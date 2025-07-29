@@ -30,7 +30,7 @@ const About = () => {
               </h3>
               
               <p className="text-lg text-foreground leading-relaxed">
-                Located at #13/3, Naveen Market, T.N. Setty Lane, Chickpet, Bangalore: 560 053, Panna Distributors 
+                Located in Bangalore, Panna Distributors 
                 has been serving the textile needs of institutions across South India for over 
                 45 years.
               </p>
