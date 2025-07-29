@@ -33,6 +33,7 @@ const Hero = () => {
             <Button 
               variant="accent" 
               size="lg"
+              onClick={() => window.open('https://wa.me/9448762116?text=Hi,%20Need%20a%20Quote', '_blank')}
               className="text-lg px-8 py-6 h-auto font-semibold"
             >
               Get Quote Now
