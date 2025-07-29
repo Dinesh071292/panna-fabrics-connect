@@ -11,7 +11,7 @@ const About = () => {
               About Panna Distributors
             </h2>
             <p className="text-xl text-business-muted max-w-3xl mx-auto">
-              Four decades of unwavering commitment to quality textiles and customer satisfaction
+              45+ years of unwavering commitment to quality textiles and customer satisfaction
             </p>
           </div>
           
@@ -26,13 +26,13 @@ const About = () => {
             
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-business-navy mb-4">
-                Your Trusted Textile Partner Since 1984
+                Your Trusted Textile Partner Since 1979
               </h3>
               
               <p className="text-lg text-foreground leading-relaxed">
-                Located in the heart of T N Shetty Lane, Chickpet, Bangalore, Panna Distributors 
+                Located at #13/3, Naveen Market, T.N. Setty Lane, Chickpet, Bangalore: 560 053, Panna Distributors 
                 has been serving the textile needs of institutions across South India for over 
-                four decades.
+                45 years.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
@@ -48,14 +48,14 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="text-center shadow-card border-0">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-business-navy mb-2">1984</div>
+                <div className="text-3xl font-bold text-business-navy mb-2">1979</div>
                 <div className="text-business-muted">Established</div>
               </CardContent>
             </Card>
             
             <Card className="text-center shadow-card border-0">
               <CardContent className="pt-6">
-                <div className="text-3xl font-bold text-business-navy mb-2">30+</div>
+                <div className="text-3xl font-bold text-business-navy mb-2">45+</div>
                 <div className="text-business-muted">Years Experience</div>
               </CardContent>
             </Card>

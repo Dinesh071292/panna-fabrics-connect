@@ -29,8 +29,8 @@ const Contact = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Address</h4>
                     <p className="text-business-light/90">
-                      T N Shetty Lane, Chickpet<br />
-                      Bangalore, Karnataka
+                      #13/3, Naveen Market, T.N. Setty Lane, Chickpet<br />
+                      Bangalore: 560 053
                     </p>
                   </div>
                 </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Phone</h4>
                     <p className="text-business-light/90 text-xl">
-                      +91 9900696668
+                      +91 94487 62116
                     </p>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                       size="lg" 
                       className="w-full text-lg py-3"
                     >
-                      Call Now: 9900696668
+                      Call Now: 94487 62116
                     </Button>
                     
                     <Button 
@@ -121,7 +121,7 @@ const Contact = () => {
               Let us be your trusted partner for all shirting, suiting, and uniform requirements
             </h3>
             <p className="text-lg text-business-light/90">
-              Experience four decades of textile excellence with Panna Distributors
+              Experience 45+ years of textile excellence with Panna Distributors
             </p>
           </div>
         </div>

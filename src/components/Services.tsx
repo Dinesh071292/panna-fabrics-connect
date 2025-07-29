@@ -5,8 +5,8 @@ import manufacturingImage from "@/assets/manufacturing.jpg";
 const Services = () => {
   const advantages = [
     {
-      title: "40+ Years Expertise",
-      description: "Deep understanding of which fabrics suit each business need based on four decades of experience"
+      title: "45+ Years Expertise",
+      description: "Deep understanding of which fabrics suit each business need based on 45+ years of experience"
     },
     {
       title: "In-House Manufacturing",
