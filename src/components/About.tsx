@@ -36,7 +36,7 @@ const About = () => {
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                As a sole proprietorship with 30+ years of hands-on experience, we understand 
+                As a business with 30+ years of hands-on experience, we understand 
                 the unique fabric requirements of schools, colleges, hotels, hospitals, and 
                 factories. Our dedicated team of 7 professionals ensures personalized service 
                 and rapid response to your orders.
