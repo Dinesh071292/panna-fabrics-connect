@@ -53,13 +53,13 @@ const Navigation = () => {
             {navItems.map((item) => (
               <Button
                 key={item.id}
-                variant={isScrolled ? "ghost" : "outline"}
+                variant={isScrolled ? "ghost" : "secondary"}
                 size="sm"
                 onClick={() => scrollToSection(item.id)}
                 className={
                   isScrolled 
                     ? "text-business-navy hover:text-business-gold hover:bg-business-gold/10" 
-                    : "text-business-light border-business-light/30 hover:bg-business-light/10 hover:text-business-gold"
+                    : "bg-background/80 text-business-navy border-business-light/30 hover:bg-background/90 hover:text-business-gold backdrop-blur-sm"
                 }
               >
                 {item.label}
