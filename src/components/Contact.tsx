@@ -94,6 +94,7 @@ const Contact = () => {
                       variant="accent" 
                       size="lg" 
                       className="w-full text-lg py-3"
+                      onClick={() => window.open('mailto:info@pannadistributors.com', '_blank')}
                     >
                       Send Email Inquiry
                     </Button>
