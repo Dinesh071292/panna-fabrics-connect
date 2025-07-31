@@ -59,8 +59,12 @@ const Products = () => {
                     <Button variant="business" className="w-full">
                       Request Samples
                     </Button>
-                    <Button variant="outline" className="w-full border-business-navy text-business-navy hover:bg-business-navy hover:text-business-light">
-                      View Catalogue
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-business-navy text-business-navy hover:bg-business-navy hover:text-business-light"
+                      onClick={() => window.open(`https://wa.me/919448762116?text=Hi Could you please share ${product.title} Catalogue`, '_blank')}
+                    >
+                      Request Catalogue
                     </Button>
                   </div>
                 </CardContent>
