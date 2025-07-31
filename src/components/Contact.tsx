@@ -86,6 +86,7 @@ const Contact = () => {
                       variant="business" 
                       size="lg" 
                       className="w-full text-lg py-3"
+                      onClick={() => window.open('tel:+919448762116', '_blank')}
                     >
                       Call Now: 94487 62116
                     </Button>
