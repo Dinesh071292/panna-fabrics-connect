@@ -57,8 +57,8 @@ const Products = () => {
                   
                   <div className="flex justify-center">
                     <Button 
-                      variant="outline" 
-                      className="w-full border-business-navy text-business-navy hover:bg-business-navy hover:text-business-light"
+                      variant="business" 
+                      className="w-full"
                       onClick={() => window.open(`https://wa.me/919448762116?text=Hi Could you please share ${product.title} Catalogue`, '_blank')}
                     >
                       Request Catalogue
