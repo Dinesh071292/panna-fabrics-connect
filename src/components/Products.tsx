@@ -136,7 +136,12 @@ const Products = () => {
               Complete customization services with our own stitching facility. From fabric selection 
               to final garment delivery - we handle it all under one roof.
             </p>
-            <Button variant="accent" size="lg" className="text-lg px-8 py-3">
+            <Button 
+              variant="accent" 
+              size="lg" 
+              className="text-lg px-8 py-3"
+              onClick={() => window.open('https://wa.me/919448762116?text=Hey was going through your website, need to discuss the products / services you offer', '_blank')}
+            >
               Learn More About Our Services
             </Button>
           </div>
