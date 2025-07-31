@@ -10,7 +10,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-business-navy mb-6">
               About Panna Distributors
             </h2>
-            <p className="text-xl text-business-muted max-w-3xl mx-auto">
+            <p className="text-xl text-business-muted max-w-3xl mx-auto text-justify">
               45+ years of unwavering commitment to quality textiles and customer satisfaction
             </p>
           </div>
@@ -29,13 +29,13 @@ const About = () => {
                 Your Trusted Textile Partner Since 1979
               </h3>
               
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed text-justify">
                 Located in Bangalore, Panna Distributors 
                 has been serving the textile needs of institutions across South India for over 
                 45 years.
               </p>
               
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed text-justify">
                 As a business with 30+ years of hands-on experience, we understand 
                 the unique fabric requirements of schools, colleges, hotels, hospitals, and 
                 factories. Our dedicated team of 7 professionals ensures personalized service 

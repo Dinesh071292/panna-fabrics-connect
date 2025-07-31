@@ -28,7 +28,7 @@ const Products = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-business-navy mb-6">
               Our Product Portfolio
             </h2>
-            <p className="text-xl text-business-muted max-w-3xl mx-auto">
+            <p className="text-xl text-business-muted max-w-3xl mx-auto text-justify">
               Comprehensive textile solutions for every business and institutional need
             </p>
           </div>
@@ -42,7 +42,7 @@ const Products = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground mb-6 leading-relaxed">
+                  <p className="text-foreground mb-6 leading-relaxed text-justify">
                     {product.description}
                   </p>
                   
@@ -75,7 +75,7 @@ const Products = () => {
               <h3 className="text-3xl font-bold text-business-navy mb-4">
                 Product Catalogues
               </h3>
-              <p className="text-lg text-business-muted max-w-2xl mx-auto">
+              <p className="text-lg text-business-muted max-w-2xl mx-auto text-justify">
                 Browse our comprehensive catalogues featuring the latest fabric collections and specifications
               </p>
             </div>
@@ -132,7 +132,7 @@ const Products = () => {
             <h3 className="text-3xl font-bold text-business-light mb-4">
               In-House Stitching Factory
             </h3>
-            <p className="text-xl text-business-light/90 mb-6 max-w-3xl mx-auto">
+            <p className="text-xl text-business-light/90 mb-6 max-w-3xl mx-auto text-justify">
               Complete customization services with our own stitching facility. From fabric selection 
               to final garment delivery - we handle it all under one roof.
             </p>

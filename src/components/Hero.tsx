@@ -24,7 +24,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-business-light/90 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-business-light/90 max-w-3xl mx-auto text-justify">
             Wholesale Shirting, Suiting & Uniform Materials for Schools, Colleges, 
             Hotels, Hospitals, Factories across South India
           </p>
