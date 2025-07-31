@@ -140,7 +140,7 @@ const Products = () => {
               variant="accent" 
               size="lg" 
               className="text-lg px-8 py-3"
-              onClick={() => window.open('https://wa.me/919448762116?text=Hey was going through your website, need to discuss the products / services you offer', '_blank')}
+              onClick={() => window.open('https://wa.me/919448762116?text=Hey was going through your website, Can we discuss the products / services you offer', '_blank')}
             >
               Learn More About Our Services
             </Button>
