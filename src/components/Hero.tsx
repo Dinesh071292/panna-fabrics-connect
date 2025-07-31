@@ -42,6 +42,10 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="text-lg px-8 py-6 h-auto border-business-light text-business-light hover:bg-business-light hover:text-business-navy"
+              onClick={() => {
+                const productsSection = document.getElementById('products');
+                productsSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               View Products
             </Button>
