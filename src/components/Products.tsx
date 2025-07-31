@@ -55,10 +55,7 @@ const Products = () => {
                     ))}
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-3">
-                    <Button variant="business" className="w-full">
-                      Request Samples
-                    </Button>
+                  <div className="flex justify-center">
                     <Button 
                       variant="outline" 
                       className="w-full border-business-navy text-business-navy hover:bg-business-navy hover:text-business-light"
