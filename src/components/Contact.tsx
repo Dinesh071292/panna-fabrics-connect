@@ -10,7 +10,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Connect With Us
             </h2>
-            <p className="text-xl text-business-light/90 max-w-3xl mx-auto text-justify">
+            <p className="text-xl text-business-light/90 max-w-3xl mx-auto">
               Ready to partner with South India's most trusted textile distributor? 
               Let's discuss your requirements today.
             </p>
@@ -76,7 +76,7 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center space-y-6">
-                  <p className="text-lg text-justify">
+                  <p className="text-lg">
                     Whether you need shirting, suiting, or uniform materials, 
                     we're here to provide the perfect solution for your organization.
                   </p>
@@ -122,7 +122,7 @@ const Contact = () => {
             <h3 className="text-2xl font-bold mb-4 text-business-gold">
               Let us be your trusted partner for all shirting, suiting, and uniform requirements
             </h3>
-            <p className="text-lg text-business-light/90 text-justify">
+            <p className="text-lg text-business-light/90">
               Experience 45+ years of textile excellence with Panna Distributors
             </p>
           </div>

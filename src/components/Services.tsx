@@ -38,7 +38,7 @@ const Services = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-business-navy mb-6">
               Why Choose Panna Distributors
             </h2>
-            <p className="text-xl text-business-muted max-w-3xl mx-auto text-justify">
+            <p className="text-xl text-business-muted max-w-3xl mx-auto">
               Competitive advantages that make us your ideal textile partner
             </p>
           </div>
@@ -56,7 +56,7 @@ const Services = () => {
               <h3 className="text-3xl font-bold text-business-navy mb-6">
                 Complete Manufacturing Capabilities
               </h3>
-              <p className="text-lg text-foreground leading-relaxed mb-6 text-justify">
+              <p className="text-lg text-foreground leading-relaxed mb-6">
                 Our state-of-the-art in-house stitching factory allows us to provide end-to-end 
                 solutions from raw fabric to finished garments. We ensure quality control at 
                 every step of the manufacturing process.
@@ -89,7 +89,7 @@ const Services = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground leading-relaxed text-justify">
+                  <p className="text-foreground leading-relaxed">
                     {advantage.description}
                   </p>
                 </CardContent>
@@ -103,7 +103,7 @@ const Services = () => {
               <h3 className="text-3xl font-bold text-business-navy mb-4">
                 Service Catalogues & Resources
               </h3>
-              <p className="text-lg text-business-muted max-w-2xl mx-auto text-justify">
+              <p className="text-lg text-business-muted max-w-2xl mx-auto">
                 Access detailed information about our manufacturing capabilities and service offerings
               </p>
             </div>
@@ -115,7 +115,7 @@ const Services = () => {
                     <div className="w-6 h-6 bg-business-gold rounded"></div>
                   </div>
                   <h4 className="text-xl font-semibold text-business-navy mb-3">Manufacturing Catalogue</h4>
-                  <p className="text-business-muted mb-4 text-justify">Complete overview of our in-house manufacturing capabilities and processes</p>
+                  <p className="text-business-muted mb-4">Complete overview of our in-house manufacturing capabilities and processes</p>
                   <Button variant="business" className="w-full">
                     Download Catalogue
                   </Button>
@@ -128,7 +128,7 @@ const Services = () => {
                     <div className="w-6 h-6 bg-business-gold rounded"></div>
                   </div>
                   <h4 className="text-xl font-semibold text-business-navy mb-3">Custom Solutions Guide</h4>
-                  <p className="text-business-muted mb-4 text-justify">Detailed guide on our customization services and bespoke solutions</p>
+                  <p className="text-business-muted mb-4">Detailed guide on our customization services and bespoke solutions</p>
                   <Button variant="business" className="w-full">
                     Download Guide
                   </Button>
@@ -141,7 +141,7 @@ const Services = () => {
                     <div className="w-6 h-6 bg-business-gold rounded"></div>
                   </div>
                   <h4 className="text-xl font-semibold text-business-navy mb-3">Quality Standards</h4>
-                  <p className="text-business-muted mb-4 text-justify">Our quality control processes and industry certifications</p>
+                  <p className="text-business-muted mb-4">Our quality control processes and industry certifications</p>
                   <Button variant="business" className="w-full">
                     View Standards
                   </Button>
