@@ -56,7 +56,7 @@ const Services = () => {
               <h3 className="text-3xl font-bold text-business-navy mb-6">
                 Complete Manufacturing Capabilities
               </h3>
-              <p className="text-lg text-foreground leading-relaxed mb-6">
+              <p className="text-lg text-foreground leading-relaxed mb-6 text-justify">
                 Our state-of-the-art in-house stitching factory allows us to provide end-to-end 
                 solutions from raw fabric to finished garments. We ensure quality control at 
                 every step of the manufacturing process.
