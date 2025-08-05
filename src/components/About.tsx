@@ -29,13 +29,13 @@ const About = () => {
                 Your Trusted Textile Partner Since 1979
               </h3>
               
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed text-justify">
                 Located in Bangalore, Panna Distributors 
                 has been serving the textile needs of institutions across South India for over 
                 45 years.
               </p>
               
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-lg text-foreground leading-relaxed text-justify">
                 As a business with 45+ years of hands-on experience, we understand 
                 the unique fabric requirements of schools, colleges, hotels, hospitals, and 
                 factories. Our dedicated team of 7 professionals ensures personalized service 
