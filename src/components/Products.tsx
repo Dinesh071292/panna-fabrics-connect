@@ -42,7 +42,7 @@ const Products = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground mb-6 leading-relaxed">
+                  <p className="text-foreground mb-6 leading-relaxed text-justify">
                     {product.description}
                   </p>
                   
