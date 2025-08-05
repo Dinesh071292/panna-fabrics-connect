@@ -89,7 +89,7 @@ const Services = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground leading-relaxed">
+                  <p className="text-foreground leading-relaxed text-justify">
                     {advantage.description}
                   </p>
                 </CardContent>
