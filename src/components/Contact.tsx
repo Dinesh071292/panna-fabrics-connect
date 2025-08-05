@@ -103,7 +103,7 @@ const Contact = () => {
                   
                   <div className="pt-6 border-t border-business-navy/20">
                     <h4 className="font-semibold mb-3">We Serve:</h4>
-                    <div className="space-y-2 text-sm">
+                    <div className="grid grid-cols-2 gap-2 text-sm text-left">
                       <div>• Schools & Colleges</div>
                       <div>• Hotels & Restaurants</div>
                       <div>• Hospitals & Clinics</div>
