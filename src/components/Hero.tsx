@@ -29,7 +29,7 @@ const Hero = () => {
             Hotels, Hospitals, Factories across South India
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex justify-center items-center mb-12">
             <Button 
               variant="accent" 
               size="lg"
@@ -37,17 +37,6 @@ const Hero = () => {
               className="text-lg px-8 py-6 h-auto font-semibold"
             >
               Get Quote Now
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="text-lg px-8 py-6 h-auto border-business-light text-business-light hover:bg-business-light hover:text-business-navy"
-              onClick={() => {
-                const productsSection = document.getElementById('products');
-                productsSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              View Products
             </Button>
           </div>
           
