@@ -1,19 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, memo } from "react";
 
-const Navigation = () => {
+const Navigation = memo(() => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ 
@@ -21,7 +29,7 @@ const Navigation = () => {
         block: 'start'
       });
     }
-  };
+  }, []);
 
   const navItems = [
     { label: 'Home', id: 'hero' },
@@ -30,6 +38,10 @@ const Navigation = () => {
     { label: 'Services', id: 'services' },
     { label: 'Contact', id: 'contact' }
   ];
+
+  const handleWhatsAppClick = useCallback(() => {
+    window.open('https://wa.me/9448762116?text=Hi,%20need%20a%20quote', '_blank');
+  }, []);
 
   return (
     <nav className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
@@ -68,7 +80,7 @@ const Navigation = () => {
             <Button
               variant={isScrolled ? "business" : "accent"}
               size="sm"
-              onClick={() => window.open('https://wa.me/9448762116?text=Hi,%20need%20a%20quote', '_blank')}
+              onClick={handleWhatsAppClick}
               className="ml-2"
             >
               Get Quote
@@ -93,6 +105,6 @@ const Navigation = () => {
       </div>
     </nav>
   );
-};
+});
 
 export default Navigation;

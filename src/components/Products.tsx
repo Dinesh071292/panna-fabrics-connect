@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { memo, useCallback } from "react";
 
-const Products = () => {
+const Products = memo(() => {
   const products = [
     {
       title: "Shirting Fabrics",
@@ -19,6 +20,14 @@ const Products = () => {
       features: ["School Uniforms", "Hospital Scrubs", "Hotel Staff", "Factory Workwear", "Custom Solutions"]
     }
   ];
+
+  const handleCatalogueRequest = useCallback((productTitle: string) => {
+    window.open(`https://wa.me/919448762116?text=Hi Could you please share ${productTitle} Catalogue`, '_blank');
+  }, []);
+
+  const handleServiceDiscussion = useCallback(() => {
+    window.open('https://wa.me/919448762116?text=Hey was going through your website, Can we discuss the products / services you offer', '_blank');
+  }, []);
 
   return (
     <section className="py-20 bg-background">
@@ -59,7 +68,7 @@ const Products = () => {
                     <Button 
                       variant="business" 
                       className="w-full"
-                      onClick={() => window.open(`https://wa.me/919448762116?text=Hi Could you please share ${product.title} Catalogue`, '_blank')}
+                      onClick={() => handleCatalogueRequest(product.title)}
                     >
                       Request Catalogue
                     </Button>
@@ -140,7 +149,7 @@ const Products = () => {
               variant="accent" 
               size="lg" 
               className="text-lg px-8 py-3"
-              onClick={() => window.open('https://wa.me/919448762116?text=Hey was going through your website, Can we discuss the products / services you offer', '_blank')}
+              onClick={handleServiceDiscussion}
             >
               Learn More About Our Services
             </Button>
@@ -149,6 +158,6 @@ const Products = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Products;

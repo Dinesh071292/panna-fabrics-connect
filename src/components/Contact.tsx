@@ -1,7 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { memo, useCallback } from "react";
 
-const Contact = () => {
+const Contact = memo(() => {
+  const handlePhoneCall = useCallback(() => {
+    window.open('tel:+919448762116', '_blank');
+  }, []);
+
+  const handleEmailClick = useCallback(() => {
+    window.open('mailto:info@pannadistributors.com', '_blank');
+  }, []);
+
   return (
     <section className="py-20 bg-business-navy text-business-light">
       <div className="container mx-auto px-4">
@@ -86,7 +95,7 @@ const Contact = () => {
                       variant="business" 
                       size="lg" 
                       className="w-full text-lg py-3"
-                      onClick={() => window.open('tel:+919448762116', '_blank')}
+                      onClick={handlePhoneCall}
                     >
                       Call Now: 94487 62116
                     </Button>
@@ -95,7 +104,7 @@ const Contact = () => {
                       variant="accent" 
                       size="lg" 
                       className="w-full text-lg py-3"
-                      onClick={() => window.open('mailto:info@pannadistributors.com', '_blank')}
+                      onClick={handleEmailClick}
                     >
                       Send Email Inquiry
                     </Button>
@@ -130,6 +139,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Contact;

@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { memo } from "react";
 import businessMeeting from "@/assets/business-meeting.jpg";
 
-const About = () => {
+const About = memo(() => {
   return (
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
@@ -21,6 +22,8 @@ const About = () => {
                 src={businessMeeting} 
                 alt="Business meeting with textile samples" 
                 className="w-full rounded-lg shadow-card"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
@@ -78,6 +81,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

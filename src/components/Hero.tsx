@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { memo } from "react";
 import heroImage from "@/assets/hero-textile.jpg";
 
-const Hero = () => {
+const Hero = memo(() => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -10,6 +11,8 @@ const Hero = () => {
           src={heroImage} 
           alt="Professional textile warehouse" 
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-business-navy/80 to-business-navy/60"></div>
       </div>
@@ -59,6 +62,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { memo } from "react";
 import manufacturingImage from "@/assets/manufacturing.jpg";
 
-const Services = () => {
+const Services = memo(() => {
   const advantages = [
     {
       title: "45+ Years Expertise",
@@ -49,6 +50,8 @@ const Services = () => {
                 src={manufacturingImage} 
                 alt="Modern manufacturing facility" 
                 className="w-full rounded-lg shadow-card"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
@@ -153,6 +156,6 @@ const Services = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Services;

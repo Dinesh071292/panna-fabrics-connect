@@ -120,4 +120,27 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Improve text rendering performance */
+  html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Optimize scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Improve animation performance */
+  * {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+
+  /* Performance optimizations for better loading */
+  img {
+    content-visibility: auto;
+  }
 }
