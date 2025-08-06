@@ -7,6 +7,10 @@ const Contact = memo(() => {
     window.open('tel:+919448762116', '_blank');
   }, []);
 
+  const handleSecondPhoneCall = useCallback(() => {
+    window.open('tel:+919663352935', '_blank');
+  }, []);
+
   const handleEmailClick = useCallback(() => {
     window.open('mailto:info@pannadistributors.com', '_blank');
   }, []);
@@ -49,7 +53,8 @@ const Contact = memo(() => {
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Phone</h4>
                     <p className="text-business-light/90 text-xl">
-                      +91 94487 62116
+                      +91 94487 62116<br />
+                      +91 96633 52935
                     </p>
                   </div>
                 </div>
@@ -90,14 +95,23 @@ const Contact = memo(() => {
                     we're here to provide the perfect solution for your organization.
                   </p>
                   
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     <Button 
                       variant="business" 
                       size="lg" 
                       className="w-full text-lg py-3"
                       onClick={handlePhoneCall}
                     >
-                      Call Now: 94487 62116
+                      Call: 94487 62116
+                    </Button>
+                    
+                    <Button 
+                      variant="business" 
+                      size="lg" 
+                      className="w-full text-lg py-3"
+                      onClick={handleSecondPhoneCall}
+                    >
+                      Call: 96633 52935
                     </Button>
                     
                     <Button 
