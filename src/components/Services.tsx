@@ -158,4 +158,6 @@ const Services = memo(() => {
   );
 });
 
+Services.displayName = 'Services';
+
 export default Services;

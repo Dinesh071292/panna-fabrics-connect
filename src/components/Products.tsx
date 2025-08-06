@@ -160,4 +160,6 @@ const Products = memo(() => {
   );
 });
 
+Products.displayName = 'Products';
+
 export default Products;
