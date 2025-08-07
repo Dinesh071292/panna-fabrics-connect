@@ -53,6 +53,11 @@ const Navigation = memo(() => {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/c0149a8f-9e3a-482c-ad5f-ce4ae00a2709.png" 
+              alt="Panna Distributors Logo" 
+              className="h-10 w-auto mr-3"
+            />
             <h1 className={`text-xl font-bold transition-colors duration-300 ${
               isScrolled ? 'text-business-navy' : 'text-business-light'
             }`}>
