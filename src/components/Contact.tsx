@@ -140,8 +140,15 @@ const Contact = memo(() => {
             </div>
           </div>
           
-          {/* Bottom CTA */}
+          {/* Bottom CTA with Logo */}
           <div className="text-center">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/c0149a8f-9e3a-482c-ad5f-ce4ae00a2709.png" 
+                alt="Panna Distributors Logo" 
+                className="h-20 w-auto opacity-90"
+              />
+            </div>
             <h3 className="text-2xl font-bold mb-4 text-business-gold">
               Let us be your trusted partner for all shirting, suiting, and uniform requirements
             </h3>

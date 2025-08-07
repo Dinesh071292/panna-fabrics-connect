@@ -20,13 +20,6 @@ const Hero = memo(() => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-business-light">
         <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/lovable-uploads/c0149a8f-9e3a-482c-ad5f-ce4ae00a2709.png" 
-              alt="Panna Distributors Logo" 
-              className="h-32 md:h-40 w-auto"
-            />
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-business-gold">Panna Distributors</span>
             <span className="block text-3xl md:text-4xl font-medium mt-4">
