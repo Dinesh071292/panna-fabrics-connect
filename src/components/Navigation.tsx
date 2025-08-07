@@ -2,25 +2,6 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect, useCallback, memo } from "react";
 
 const Navigation = memo(() => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    let ticking = false;
-    
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          setIsScrolled(window.scrollY > 50);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -44,7 +25,7 @@ const Navigation = memo(() => {
   }, []);
 
   return (
-    <nav className="relative z-50 bg-transparent">
+    <nav className="absolute top-0 right-0 left-0 z-50 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
