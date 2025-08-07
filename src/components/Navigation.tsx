@@ -44,11 +44,7 @@ const Navigation = memo(() => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/95 backdrop-blur-sm shadow-lg border-b border-border' 
-        : 'bg-transparent'
-    }`}>
+    <nav className="relative z-50 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
@@ -58,9 +54,7 @@ const Navigation = memo(() => {
               alt="Panna Distributors Logo" 
               className="h-10 w-auto mr-3"
             />
-            <h1 className={`text-xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-business-navy' : 'text-business-light'
-            }`}>
+            <h1 className="text-xl font-bold text-business-light">
               Panna Distributors
             </h1>
           </div>
@@ -70,20 +64,16 @@ const Navigation = memo(() => {
             {navItems.map((item) => (
               <Button
                 key={item.id}
-                variant={isScrolled ? "ghost" : "secondary"}
+                variant="secondary"
                 size="sm"
                 onClick={() => scrollToSection(item.id)}
-                className={
-                  isScrolled 
-                    ? "text-business-navy hover:text-business-gold hover:bg-business-gold/10" 
-                    : "bg-background/80 text-business-navy border-business-light/30 hover:bg-background/90 hover:text-business-gold backdrop-blur-sm"
-                }
+                className="bg-background/80 text-business-navy border-business-light/30 hover:bg-background/90 hover:text-business-gold backdrop-blur-sm"
               >
                 {item.label}
               </Button>
             ))}
             <Button
-              variant={isScrolled ? "business" : "accent"}
+              variant="accent"
               size="sm"
               onClick={handleWhatsAppClick}
               className="ml-2"
@@ -95,13 +85,9 @@ const Navigation = memo(() => {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <Button
-              variant={isScrolled ? "ghost" : "outline"}
+              variant="outline"
               size="sm"
-              className={
-                isScrolled 
-                  ? "text-business-navy" 
-                  : "text-business-light border-business-light/30"
-              }
+              className="text-business-light border-business-light/30"
             >
               Menu
             </Button>
